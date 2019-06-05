@@ -1,0 +1,803 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="c2931fc3-a378-4ec7-a466-82937d19f505" activeEnvironment="Default" name="HolidayService" resourceRoot="" soapui-version="5.5.0" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:WsdlInterface" id="1738b831-387e-481f-80d6-005a071f8a6c" wsaVersion="NONE" name="HolidayServiceSoap12" type="wsdl" bindingName="{http://www.27seconds.com/Holidays/}HolidayServiceSoap12" soapVersion="1_2" anonymous="optional" definition="http://www.holidaywebservice.com/Holidays/HolidayService.asmx?WSDL" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache/><con:endpoints><con:endpoint>http://www.holidaywebservice.com/Holidays/HolidayService.asmx</con:endpoint></con:endpoints><con:operation id="532718de-65ab-449e-9da8-a8fc2d463021" isOneWay="false" action="http://www.27seconds.com/Holidays/GetCountriesAvailable" name="GetCountriesAvailable" bindingOperationName="GetCountriesAvailable" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="d1fefc60-5759-4b46-9736-db74e5cab952" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.holidaywebservice.com/Holidays/HolidayService.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:hol="http://www.27seconds.com/Holidays/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <hol:GetCountriesAvailable/>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.27seconds.com/Holidays/HolidayServiceSoap/GetCountriesAvailableRequest"/></con:call></con:operation><con:operation id="2ecb4271-4381-4614-be4a-dd5acf09d4fd" isOneWay="false" action="http://www.27seconds.com/Holidays/GetHolidayDate" name="GetHolidayDate" bindingOperationName="GetHolidayDate" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="d67123cc-a493-48f6-a766-50aa169e4c1b" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.holidaywebservice.com/Holidays/HolidayService.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:hol="http://www.27seconds.com/Holidays/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <hol:GetHolidayDate>\r
+         <!--Optional:-->\r
+         <hol:countryCode>?</hol:countryCode>\r
+         <!--Optional:-->\r
+         <hol:holidayName>?</hol:holidayName>\r
+         <hol:year>?</hol:year>\r
+      </hol:GetHolidayDate>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.27seconds.com/Holidays/HolidayServiceSoap/GetHolidayDateRequest"/></con:call></con:operation><con:operation id="1dfca062-193a-464d-a01b-f6a7bff1503b" isOneWay="false" action="http://www.27seconds.com/Holidays/GetHolidaysAvailable" name="GetHolidaysAvailable" bindingOperationName="GetHolidaysAvailable" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="03c3e2f5-2161-478c-b28f-43144a8ce05e" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.holidaywebservice.com/Holidays/HolidayService.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:hol="http://www.27seconds.com/Holidays/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <hol:GetHolidaysAvailable>\r
+         <!--Optional:-->\r
+         <hol:countryCode>?</hol:countryCode>\r
+      </hol:GetHolidaysAvailable>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.27seconds.com/Holidays/HolidayServiceSoap/GetHolidaysAvailableRequest"/></con:call></con:operation><con:operation id="c12b022d-e76f-4fcb-8199-fc5a4fd84865" isOneWay="false" action="http://www.27seconds.com/Holidays/GetHolidaysForDateRange" name="GetHolidaysForDateRange" bindingOperationName="GetHolidaysForDateRange" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="770b1899-8ee1-4649-9937-b7dd02fc1a8d" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.holidaywebservice.com/Holidays/HolidayService.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:hol="http://www.27seconds.com/Holidays/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <hol:GetHolidaysForDateRange>\r
+         <!--Optional:-->\r
+         <hol:countryCode>?</hol:countryCode>\r
+         <hol:startDate>?</hol:startDate>\r
+         <hol:endDate>?</hol:endDate>\r
+      </hol:GetHolidaysForDateRange>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.27seconds.com/Holidays/HolidayServiceSoap/GetHolidaysForDateRangeRequest"/></con:call></con:operation><con:operation id="1daece22-eaf7-43bf-884e-065d2784a8b1" isOneWay="false" action="http://www.27seconds.com/Holidays/GetHolidaysForMonth" name="GetHolidaysForMonth" bindingOperationName="GetHolidaysForMonth" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="4a3ecc0c-bac4-45ea-9584-ab93587f86e4" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.holidaywebservice.com/Holidays/HolidayService.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:hol="http://www.27seconds.com/Holidays/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <hol:GetHolidaysForMonth>\r
+         <!--Optional:-->\r
+         <hol:countryCode>?</hol:countryCode>\r
+         <hol:year>?</hol:year>\r
+         <hol:month>?</hol:month>\r
+      </hol:GetHolidaysForMonth>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.27seconds.com/Holidays/HolidayServiceSoap/GetHolidaysForMonthRequest"/></con:call></con:operation><con:operation id="8bb29d6a-aeaa-44b6-98b7-989539842f8c" isOneWay="false" action="http://www.27seconds.com/Holidays/GetHolidaysForYear" name="GetHolidaysForYear" bindingOperationName="GetHolidaysForYear" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="44e2332a-e421-4da6-a41c-5e8a9594e954" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.holidaywebservice.com/Holidays/HolidayService.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:hol="http://www.27seconds.com/Holidays/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <hol:GetHolidaysForYear>\r
+         <!--Optional:-->\r
+         <hol:countryCode>?</hol:countryCode>\r
+         <hol:year>?</hol:year>\r
+      </hol:GetHolidaysForYear>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.27seconds.com/Holidays/HolidayServiceSoap/GetHolidaysForYearRequest"/></con:call></con:operation></con:interface><con:interface xsi:type="con:WsdlInterface" id="4b138ae7-70a8-4b42-af74-4dd30b7a61f7" wsaVersion="NONE" name="HolidayServiceSoap" type="wsdl" bindingName="{http://www.27seconds.com/Holidays/}HolidayServiceSoap" soapVersion="1_1" anonymous="optional" definition="http://www.holidaywebservice.com/Holidays/HolidayService.asmx?WSDL" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="http://www.holidaywebservice.com/Holidays/HolidayService.asmx?WSDL"><con:part><con:url>http://www.holidaywebservice.com/Holidays/HolidayService.asmx?WSDL</con:url><con:content><![CDATA[<wsdl:definitions targetNamespace="http://www.27seconds.com/Holidays/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.27seconds.com/Holidays/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:documentation>Web service that calculates national holidays for the country code provided.</wsdl:documentation>
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://www.27seconds.com/Holidays/">
+      <s:element name="GetCountriesAvailable">
+        <s:complexType/>
+      </s:element>
+      <s:element name="GetCountriesAvailableResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetCountriesAvailableResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema"/>
+                  <s:any/>
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetHolidaysAvailable">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="countryCode" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetHolidaysAvailableResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetHolidaysAvailableResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema"/>
+                  <s:any/>
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetHolidayDate">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="countryCode" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="holidayName" type="s:string"/>
+            <s:element minOccurs="1" maxOccurs="1" name="year" type="s:int"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetHolidayDateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetHolidayDateResult" type="s:dateTime"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetHolidaysForYear">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="countryCode" type="s:string"/>
+            <s:element minOccurs="1" maxOccurs="1" name="year" type="s:int"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetHolidaysForYearResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetHolidaysForYearResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema"/>
+                  <s:any/>
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetHolidaysForMonth">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="countryCode" type="s:string"/>
+            <s:element minOccurs="1" maxOccurs="1" name="year" type="s:int"/>
+            <s:element minOccurs="1" maxOccurs="1" name="month" type="s:int"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetHolidaysForMonthResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetHolidaysForMonthResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema"/>
+                  <s:any/>
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetHolidaysForDateRange">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="countryCode" type="s:string"/>
+            <s:element minOccurs="1" maxOccurs="1" name="startDate" type="s:dateTime"/>
+            <s:element minOccurs="1" maxOccurs="1" name="endDate" type="s:dateTime"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetHolidaysForDateRangeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetHolidaysForDateRangeResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema"/>
+                  <s:any/>
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DataSet" nillable="true">
+        <s:complexType>
+          <s:sequence>
+            <s:element ref="s:schema"/>
+            <s:any/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="dateTime" type="s:dateTime"/>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetCountriesAvailableSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCountriesAvailable"/>
+  </wsdl:message>
+  <wsdl:message name="GetCountriesAvailableSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCountriesAvailableResponse"/>
+  </wsdl:message>
+  <wsdl:message name="GetHolidaysAvailableSoapIn">
+    <wsdl:part name="parameters" element="tns:GetHolidaysAvailable"/>
+  </wsdl:message>
+  <wsdl:message name="GetHolidaysAvailableSoapOut">
+    <wsdl:part name="parameters" element="tns:GetHolidaysAvailableResponse"/>
+  </wsdl:message>
+  <wsdl:message name="GetHolidayDateSoapIn">
+    <wsdl:part name="parameters" element="tns:GetHolidayDate"/>
+  </wsdl:message>
+  <wsdl:message name="GetHolidayDateSoapOut">
+    <wsdl:part name="parameters" element="tns:GetHolidayDateResponse"/>
+  </wsdl:message>
+  <wsdl:message name="GetHolidaysForYearSoapIn">
+    <wsdl:part name="parameters" element="tns:GetHolidaysForYear"/>
+  </wsdl:message>
+  <wsdl:message name="GetHolidaysForYearSoapOut">
+    <wsdl:part name="parameters" element="tns:GetHolidaysForYearResponse"/>
+  </wsdl:message>
+  <wsdl:message name="GetHolidaysForMonthSoapIn">
+    <wsdl:part name="parameters" element="tns:GetHolidaysForMonth"/>
+  </wsdl:message>
+  <wsdl:message name="GetHolidaysForMonthSoapOut">
+    <wsdl:part name="parameters" element="tns:GetHolidaysForMonthResponse"/>
+  </wsdl:message>
+  <wsdl:message name="GetHolidaysForDateRangeSoapIn">
+    <wsdl:part name="parameters" element="tns:GetHolidaysForDateRange"/>
+  </wsdl:message>
+  <wsdl:message name="GetHolidaysForDateRangeSoapOut">
+    <wsdl:part name="parameters" element="tns:GetHolidaysForDateRangeResponse"/>
+  </wsdl:message>
+  <wsdl:message name="GetCountriesAvailableHttpGetIn"/>
+  <wsdl:message name="GetCountriesAvailableHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataSet"/>
+  </wsdl:message>
+  <wsdl:message name="GetHolidaysAvailableHttpGetIn">
+    <wsdl:part name="countryCode" type="s:string"/>
+  </wsdl:message>
+  <wsdl:message name="GetHolidaysAvailableHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataSet"/>
+  </wsdl:message>
+  <wsdl:message name="GetHolidayDateHttpGetIn">
+    <wsdl:part name="countryCode" type="s:string"/>
+    <wsdl:part name="holidayName" type="s:string"/>
+    <wsdl:part name="year" type="s:string"/>
+  </wsdl:message>
+  <wsdl:message name="GetHolidayDateHttpGetOut">
+    <wsdl:part name="Body" element="tns:dateTime"/>
+  </wsdl:message>
+  <wsdl:message name="GetHolidaysForYearHttpGetIn">
+    <wsdl:part name="countryCode" type="s:string"/>
+    <wsdl:part name="year" type="s:string"/>
+  </wsdl:message>
+  <wsdl:message name="GetHolidaysForYearHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataSet"/>
+  </wsdl:message>
+  <wsdl:message name="GetHolidaysForMonthHttpGetIn">
+    <wsdl:part name="countryCode" type="s:string"/>
+    <wsdl:part name="year" type="s:string"/>
+    <wsdl:part name="month" type="s:string"/>
+  </wsdl:message>
+  <wsdl:message name="GetHolidaysForMonthHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataSet"/>
+  </wsdl:message>
+  <wsdl:message name="GetHolidaysForDateRangeHttpGetIn">
+    <wsdl:part name="countryCode" type="s:string"/>
+    <wsdl:part name="startDate" type="s:string"/>
+    <wsdl:part name="endDate" type="s:string"/>
+  </wsdl:message>
+  <wsdl:message name="GetHolidaysForDateRangeHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataSet"/>
+  </wsdl:message>
+  <wsdl:message name="GetCountriesAvailableHttpPostIn"/>
+  <wsdl:message name="GetCountriesAvailableHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet"/>
+  </wsdl:message>
+  <wsdl:message name="GetHolidaysAvailableHttpPostIn">
+    <wsdl:part name="countryCode" type="s:string"/>
+  </wsdl:message>
+  <wsdl:message name="GetHolidaysAvailableHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet"/>
+  </wsdl:message>
+  <wsdl:message name="GetHolidayDateHttpPostIn">
+    <wsdl:part name="countryCode" type="s:string"/>
+    <wsdl:part name="holidayName" type="s:string"/>
+    <wsdl:part name="year" type="s:string"/>
+  </wsdl:message>
+  <wsdl:message name="GetHolidayDateHttpPostOut">
+    <wsdl:part name="Body" element="tns:dateTime"/>
+  </wsdl:message>
+  <wsdl:message name="GetHolidaysForYearHttpPostIn">
+    <wsdl:part name="countryCode" type="s:string"/>
+    <wsdl:part name="year" type="s:string"/>
+  </wsdl:message>
+  <wsdl:message name="GetHolidaysForYearHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet"/>
+  </wsdl:message>
+  <wsdl:message name="GetHolidaysForMonthHttpPostIn">
+    <wsdl:part name="countryCode" type="s:string"/>
+    <wsdl:part name="year" type="s:string"/>
+    <wsdl:part name="month" type="s:string"/>
+  </wsdl:message>
+  <wsdl:message name="GetHolidaysForMonthHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet"/>
+  </wsdl:message>
+  <wsdl:message name="GetHolidaysForDateRangeHttpPostIn">
+    <wsdl:part name="countryCode" type="s:string"/>
+    <wsdl:part name="startDate" type="s:string"/>
+    <wsdl:part name="endDate" type="s:string"/>
+  </wsdl:message>
+  <wsdl:message name="GetHolidaysForDateRangeHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet"/>
+  </wsdl:message>
+  <wsdl:portType name="HolidayServiceSoap">
+    <wsdl:operation name="GetCountriesAvailable">
+      <wsdl:documentation>Get the countries supported.</wsdl:documentation>
+      <wsdl:input message="tns:GetCountriesAvailableSoapIn"/>
+      <wsdl:output message="tns:GetCountriesAvailableSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetHolidaysAvailable">
+      <wsdl:documentation>Get the available holidays.</wsdl:documentation>
+      <wsdl:input message="tns:GetHolidaysAvailableSoapIn"/>
+      <wsdl:output message="tns:GetHolidaysAvailableSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetHolidayDate">
+      <wsdl:documentation>Get the date of a specific holiday.</wsdl:documentation>
+      <wsdl:input message="tns:GetHolidayDateSoapIn"/>
+      <wsdl:output message="tns:GetHolidayDateSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetHolidaysForYear">
+      <wsdl:documentation>Get the holidays for an entire year.</wsdl:documentation>
+      <wsdl:input message="tns:GetHolidaysForYearSoapIn"/>
+      <wsdl:output message="tns:GetHolidaysForYearSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetHolidaysForMonth">
+      <wsdl:documentation>Get the holidays for a specific month.</wsdl:documentation>
+      <wsdl:input message="tns:GetHolidaysForMonthSoapIn"/>
+      <wsdl:output message="tns:GetHolidaysForMonthSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetHolidaysForDateRange">
+      <wsdl:documentation>Get the holidays for a date range.</wsdl:documentation>
+      <wsdl:input message="tns:GetHolidaysForDateRangeSoapIn"/>
+      <wsdl:output message="tns:GetHolidaysForDateRangeSoapOut"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="HolidayServiceHttpGet">
+    <wsdl:operation name="GetCountriesAvailable">
+      <wsdl:documentation>Get the countries supported.</wsdl:documentation>
+      <wsdl:input message="tns:GetCountriesAvailableHttpGetIn"/>
+      <wsdl:output message="tns:GetCountriesAvailableHttpGetOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetHolidaysAvailable">
+      <wsdl:documentation>Get the available holidays.</wsdl:documentation>
+      <wsdl:input message="tns:GetHolidaysAvailableHttpGetIn"/>
+      <wsdl:output message="tns:GetHolidaysAvailableHttpGetOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetHolidayDate">
+      <wsdl:documentation>Get the date of a specific holiday.</wsdl:documentation>
+      <wsdl:input message="tns:GetHolidayDateHttpGetIn"/>
+      <wsdl:output message="tns:GetHolidayDateHttpGetOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetHolidaysForYear">
+      <wsdl:documentation>Get the holidays for an entire year.</wsdl:documentation>
+      <wsdl:input message="tns:GetHolidaysForYearHttpGetIn"/>
+      <wsdl:output message="tns:GetHolidaysForYearHttpGetOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetHolidaysForMonth">
+      <wsdl:documentation>Get the holidays for a specific month.</wsdl:documentation>
+      <wsdl:input message="tns:GetHolidaysForMonthHttpGetIn"/>
+      <wsdl:output message="tns:GetHolidaysForMonthHttpGetOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetHolidaysForDateRange">
+      <wsdl:documentation>Get the holidays for a date range.</wsdl:documentation>
+      <wsdl:input message="tns:GetHolidaysForDateRangeHttpGetIn"/>
+      <wsdl:output message="tns:GetHolidaysForDateRangeHttpGetOut"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="HolidayServiceHttpPost">
+    <wsdl:operation name="GetCountriesAvailable">
+      <wsdl:documentation>Get the countries supported.</wsdl:documentation>
+      <wsdl:input message="tns:GetCountriesAvailableHttpPostIn"/>
+      <wsdl:output message="tns:GetCountriesAvailableHttpPostOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetHolidaysAvailable">
+      <wsdl:documentation>Get the available holidays.</wsdl:documentation>
+      <wsdl:input message="tns:GetHolidaysAvailableHttpPostIn"/>
+      <wsdl:output message="tns:GetHolidaysAvailableHttpPostOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetHolidayDate">
+      <wsdl:documentation>Get the date of a specific holiday.</wsdl:documentation>
+      <wsdl:input message="tns:GetHolidayDateHttpPostIn"/>
+      <wsdl:output message="tns:GetHolidayDateHttpPostOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetHolidaysForYear">
+      <wsdl:documentation>Get the holidays for an entire year.</wsdl:documentation>
+      <wsdl:input message="tns:GetHolidaysForYearHttpPostIn"/>
+      <wsdl:output message="tns:GetHolidaysForYearHttpPostOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetHolidaysForMonth">
+      <wsdl:documentation>Get the holidays for a specific month.</wsdl:documentation>
+      <wsdl:input message="tns:GetHolidaysForMonthHttpPostIn"/>
+      <wsdl:output message="tns:GetHolidaysForMonthHttpPostOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetHolidaysForDateRange">
+      <wsdl:documentation>Get the holidays for a date range.</wsdl:documentation>
+      <wsdl:input message="tns:GetHolidaysForDateRangeHttpPostIn"/>
+      <wsdl:output message="tns:GetHolidaysForDateRangeHttpPostOut"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="HolidayServiceSoap" type="tns:HolidayServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="GetCountriesAvailable">
+      <soap:operation soapAction="http://www.27seconds.com/Holidays/GetCountriesAvailable" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetHolidaysAvailable">
+      <soap:operation soapAction="http://www.27seconds.com/Holidays/GetHolidaysAvailable" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetHolidayDate">
+      <soap:operation soapAction="http://www.27seconds.com/Holidays/GetHolidayDate" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetHolidaysForYear">
+      <soap:operation soapAction="http://www.27seconds.com/Holidays/GetHolidaysForYear" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetHolidaysForMonth">
+      <soap:operation soapAction="http://www.27seconds.com/Holidays/GetHolidaysForMonth" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetHolidaysForDateRange">
+      <soap:operation soapAction="http://www.27seconds.com/Holidays/GetHolidaysForDateRange" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="HolidayServiceSoap12" type="tns:HolidayServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="GetCountriesAvailable">
+      <soap12:operation soapAction="http://www.27seconds.com/Holidays/GetCountriesAvailable" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetHolidaysAvailable">
+      <soap12:operation soapAction="http://www.27seconds.com/Holidays/GetHolidaysAvailable" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetHolidayDate">
+      <soap12:operation soapAction="http://www.27seconds.com/Holidays/GetHolidayDate" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetHolidaysForYear">
+      <soap12:operation soapAction="http://www.27seconds.com/Holidays/GetHolidaysForYear" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetHolidaysForMonth">
+      <soap12:operation soapAction="http://www.27seconds.com/Holidays/GetHolidaysForMonth" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetHolidaysForDateRange">
+      <soap12:operation soapAction="http://www.27seconds.com/Holidays/GetHolidaysForDateRange" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="HolidayServiceHttpGet" type="tns:HolidayServiceHttpGet">
+    <http:binding verb="GET"/>
+    <wsdl:operation name="GetCountriesAvailable">
+      <http:operation location="/GetCountriesAvailable"/>
+      <wsdl:input>
+        <http:urlEncoded/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetHolidaysAvailable">
+      <http:operation location="/GetHolidaysAvailable"/>
+      <wsdl:input>
+        <http:urlEncoded/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetHolidayDate">
+      <http:operation location="/GetHolidayDate"/>
+      <wsdl:input>
+        <http:urlEncoded/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetHolidaysForYear">
+      <http:operation location="/GetHolidaysForYear"/>
+      <wsdl:input>
+        <http:urlEncoded/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetHolidaysForMonth">
+      <http:operation location="/GetHolidaysForMonth"/>
+      <wsdl:input>
+        <http:urlEncoded/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetHolidaysForDateRange">
+      <http:operation location="/GetHolidaysForDateRange"/>
+      <wsdl:input>
+        <http:urlEncoded/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="HolidayServiceHttpPost" type="tns:HolidayServiceHttpPost">
+    <http:binding verb="POST"/>
+    <wsdl:operation name="GetCountriesAvailable">
+      <http:operation location="/GetCountriesAvailable"/>
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded"/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetHolidaysAvailable">
+      <http:operation location="/GetHolidaysAvailable"/>
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded"/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetHolidayDate">
+      <http:operation location="/GetHolidayDate"/>
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded"/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetHolidaysForYear">
+      <http:operation location="/GetHolidaysForYear"/>
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded"/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetHolidaysForMonth">
+      <http:operation location="/GetHolidaysForMonth"/>
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded"/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetHolidaysForDateRange">
+      <http:operation location="/GetHolidaysForDateRange"/>
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded"/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="HolidayService">
+    <wsdl:documentation>Web service that calculates national holidays for the country code provided.</wsdl:documentation>
+    <wsdl:port name="HolidayServiceSoap" binding="tns:HolidayServiceSoap">
+      <soap:address location="http://www.holidaywebservice.com/Holidays/HolidayService.asmx"/>
+    </wsdl:port>
+    <wsdl:port name="HolidayServiceSoap12" binding="tns:HolidayServiceSoap12">
+      <soap12:address location="http://www.holidaywebservice.com/Holidays/HolidayService.asmx"/>
+    </wsdl:port>
+    <wsdl:port name="HolidayServiceHttpGet" binding="tns:HolidayServiceHttpGet">
+      <http:address location="http://www.holidaywebservice.com/Holidays/HolidayService.asmx"/>
+    </wsdl:port>
+    <wsdl:port name="HolidayServiceHttpPost" binding="tns:HolidayServiceHttpPost">
+      <http:address location="http://www.holidaywebservice.com/Holidays/HolidayService.asmx"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://www.holidaywebservice.com/Holidays/HolidayService.asmx</con:endpoint></con:endpoints><con:operation id="8c49448b-bfb6-4ecf-a4a3-69f897335a53" isOneWay="false" action="http://www.27seconds.com/Holidays/GetCountriesAvailable" name="GetCountriesAvailable" bindingOperationName="GetCountriesAvailable" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="00b89d61-8464-41f3-809b-e9d62485c63f" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.holidaywebservice.com/Holidays/HolidayService.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:hol="http://www.27seconds.com/Holidays/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <hol:GetCountriesAvailable/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.27seconds.com/Holidays/GetCountriesAvailable"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="1b9ce308-6c32-4293-bbc5-57f791e2e58a" isOneWay="false" action="http://www.27seconds.com/Holidays/GetHolidayDate" name="GetHolidayDate" bindingOperationName="GetHolidayDate" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="b8e69f34-0b7d-44e4-bb58-6408e6a065ee" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.holidaywebservice.com/Holidays/HolidayService.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:hol="http://www.27seconds.com/Holidays/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <hol:GetHolidayDate>\r
+         <!--Optional:-->\r
+         <hol:countryCode>?</hol:countryCode>\r
+         <!--Optional:-->\r
+         <hol:holidayName>?</hol:holidayName>\r
+         <hol:year>?</hol:year>\r
+      </hol:GetHolidayDate>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.27seconds.com/Holidays/GetHolidayDate"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="c28fbf6f-566c-47f7-a907-2fdf92b4cc81" isOneWay="false" action="http://www.27seconds.com/Holidays/GetHolidaysAvailable" name="GetHolidaysAvailable" bindingOperationName="GetHolidaysAvailable" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="5fe78d7c-50b9-4f50-aaa7-064455d66b35" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.holidaywebservice.com/Holidays/HolidayService.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:hol="http://www.27seconds.com/Holidays/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <hol:GetHolidaysAvailable>\r
+         <!--Optional:-->\r
+         <hol:countryCode>?</hol:countryCode>\r
+      </hol:GetHolidaysAvailable>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.27seconds.com/Holidays/GetHolidaysAvailable"/></con:call></con:operation><con:operation id="38340a3f-ad59-4087-b565-c2c1be4519cf" isOneWay="false" action="http://www.27seconds.com/Holidays/GetHolidaysForDateRange" name="GetHolidaysForDateRange" bindingOperationName="GetHolidaysForDateRange" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="8e7cb5c8-7f80-4d9f-b080-8b8cd2f59efb" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.holidaywebservice.com/Holidays/HolidayService.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:hol="http://www.27seconds.com/Holidays/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <hol:GetHolidaysForDateRange>\r
+         <!--Optional:-->\r
+         <hol:countryCode>?</hol:countryCode>\r
+         <hol:startDate>?</hol:startDate>\r
+         <hol:endDate>?</hol:endDate>\r
+      </hol:GetHolidaysForDateRange>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.27seconds.com/Holidays/GetHolidaysForDateRange"/></con:call></con:operation><con:operation id="5629b7ea-8cff-480c-97f3-f70022c2aaad" isOneWay="false" action="http://www.27seconds.com/Holidays/GetHolidaysForMonth" name="GetHolidaysForMonth" bindingOperationName="GetHolidaysForMonth" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="38b5713f-ff17-4b52-895e-4f1149718dc5" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.holidaywebservice.com/Holidays/HolidayService.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:hol="http://www.27seconds.com/Holidays/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <hol:GetHolidaysForMonth>\r
+         <!--Optional:-->\r
+         <hol:countryCode>?</hol:countryCode>\r
+         <hol:year>?</hol:year>\r
+         <hol:month>?</hol:month>\r
+      </hol:GetHolidaysForMonth>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.27seconds.com/Holidays/GetHolidaysForMonth"/></con:call></con:operation><con:operation id="4d0299d2-dbef-4e89-ae14-bff8a2b41beb" isOneWay="false" action="http://www.27seconds.com/Holidays/GetHolidaysForYear" name="GetHolidaysForYear" bindingOperationName="GetHolidaysForYear" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="ec0131b3-9404-4372-a825-99fcb7acf0b0" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.holidaywebservice.com/Holidays/HolidayService.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:hol="http://www.27seconds.com/Holidays/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <hol:GetHolidaysForYear>\r
+         <!--Optional:-->\r
+         <hol:countryCode>?</hol:countryCode>\r
+         <hol:year>?</hol:year>\r
+      </hol:GetHolidaysForYear>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.27seconds.com/Holidays/GetHolidaysForYear"/></con:call></con:operation></con:interface><con:interface xsi:type="con:RestService" id="d37cc49e-ed43-4e34-a00b-ea46c2319cfc" wadlVersion="http://wadl.dev.java.net/2009/02" name="https://restcountries.eu" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>https://restcountries.eu</con:endpoint></con:endpoints><con:resource name="Name" path="/rest/v2/name/{name}" id="98224d16-2e83-4034-b7f5-03e522c89ac0"><con:settings/><con:parameters><con:parameter><con:name>name</con:name><con:value>name</con:value><con:style>TEMPLATE</con:style><con:default>name</con:default><con:path xsi:nil="true"/><con:description xsi:nil="true"/></con:parameter></con:parameters><con:method name="Name 1" id="59f82c94-c46c-4e74-9377-e88f7039e40e" method="GET"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json;charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element>Response</con:element></con:representation><con:representation type="FAULT"><con:mediaType>application/json;charset=utf-8</con:mediaType><con:status>404</con:status><con:params/><con:element xmlns:name="https://restcountries.eu/rest/v2/name/name">name:Fault</con:element></con:representation><con:request name="GetCountryByName" id="d9c144c3-a179-4f05-9951-70e59cd815f6" mediaType="application/json"><con:settings/><con:endpoint>https://restcountries.eu</con:endpoint><con:request/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="name" value="name" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>name</con:entry></con:parameterOrder></con:request></con:method></con:resource></con:interface><con:testSuite id="b793a759-ceb5-4001-9081-bda5e41b2392" name="HolidayServiceSoap TestSuite"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="a95ef9ab-36cf-42f2-b98b-50abfe220b80" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="GetCountriesAvailable TestCase" searchProperties="true"><con:settings/><con:testStep type="request" id="6543c8f2-a344-47c8-9c20-f89cca24b4ed" name="GetCountriesAvailable"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>HolidayServiceSoap</con:interface><con:operation>GetCountriesAvailable</con:operation><con:request name="GetCountriesAvailable" id="fecfaafe-d7b4-4003-994b-31fc0d3902ab"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.holidaywebservice.com/Holidays/HolidayService.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:hol="http://www.27seconds.com/Holidays/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <hol:GetCountriesAvailable/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig action="http://www.27seconds.com/Holidays/GetCountriesAvailable" mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="groovy" name="SetUpandTearDownGroovy" id="387f6ea9-285f-4776-98e8-2ca86868fc7c"><con:settings/><con:config><script>//setup and teradown using groovy
+
+testRunner.testCase.testSuite.project.getTestSuiteByName('HolidayServiceSoap TestSuite').getTestCaseByName('GetCountriesAvailable TestCase').setSetupScript('log.info "setup for GetCountriesAvailable TestCase"')
+testRunner.testCase.testSuite.project.getTestSuiteByName('HolidayServiceSoap TestSuite').getTestCaseByName('GetCountriesAvailable TestCase').setTearDownScript('log.info "teardown for GetCountriesAvailable TestCase"')
+
+log.info ("  --  "+testRunner.testCase.getSetupScript());
+log.info ("  --  "+testRunner.testCase.getTearDownScript());</script></con:config></con:testStep><con:setupScript>log.info "setup for GetCountriesAvailable TestCase"</con:setupScript><con:tearDownScript>log.info "teardown for GetCountriesAvailable TestCase"</con:tearDownScript><con:properties/></con:testCase><con:testCase id="2886f212-f12c-47aa-9cd7-15bae83b431b" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="GetHolidayDate TestCase" searchProperties="true"><con:settings/><con:testStep type="request" id="e51f8018-316d-4077-bbef-6521f11cd997" name="GetHolidayDate"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>HolidayServiceSoap</con:interface><con:operation>GetHolidayDate</con:operation><con:request name="GetHolidayDate" id="e0188956-0cb6-421f-8e0d-900dcaa294be"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.holidaywebservice.com/Holidays/HolidayService.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:hol="http://www.27seconds.com/Holidays/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <hol:GetHolidayDate>\r
+         <!--Optional:-->\r
+         <hol:countryCode>GBEAW</hol:countryCode>\r
+         <!--Optional:-->\r
+         <hol:holidayName>?</hol:holidayName>\r
+         <hol:year>?</hol:year>\r
+      </hol:GetHolidayDate>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig action="http://www.27seconds.com/Holidays/GetHolidayDate" mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="deb2c704-d959-474a-84af-7f14a8a4dd6c" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="GetHolidaysAvailable TestCase" searchProperties="true"><con:settings/><con:testStep type="request" id="a79075f1-84e6-45e6-bc6c-e5e7f5714bb8" name="GetHolidaysAvailable"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>HolidayServiceSoap</con:interface><con:operation>GetHolidaysAvailable</con:operation><con:request name="GetHolidaysAvailable" id="4d594a56-5f0a-4cbf-ac8a-373ad925a36e"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.holidaywebservice.com/Holidays/HolidayService.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:hol="http://www.27seconds.com/Holidays/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <hol:GetHolidaysAvailable>\r
+         <!--Optional:-->\r
+         <hol:countryCode>GBSCT</hol:countryCode>\r
+      </hol:GetHolidaysAvailable>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig action="http://www.27seconds.com/Holidays/GetHolidaysAvailable" mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="8a65ef13-a5bd-4c2f-bdb1-6076e2220e56" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="GetHolidaysForDateRange TestCase" searchProperties="true"><con:settings/><con:testStep type="request" id="91d94d19-176e-438f-8b65-bcd35b5ecdf4" name="GetHolidaysForDateRange"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>HolidayServiceSoap</con:interface><con:operation>GetHolidaysForDateRange</con:operation><con:request name="GetHolidaysForDateRange" id="e04f81b3-9706-41bb-b3dd-f794344d5da4"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.holidaywebservice.com/Holidays/HolidayService.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:hol="http://www.27seconds.com/Holidays/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <hol:GetHolidaysForDateRange>\r
+         <!--Optional:-->\r
+         <hol:countryCode>?</hol:countryCode>\r
+         <hol:startDate>?</hol:startDate>\r
+         <hol:endDate>?</hol:endDate>\r
+      </hol:GetHolidaysForDateRange>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:wsaConfig action="http://www.27seconds.com/Holidays/GetHolidaysForDateRange"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="ada54ab2-7f56-46a5-83e2-93bb06270f52" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="GetHolidaysForMonth TestCase" searchProperties="true"><con:settings/><con:testStep type="request" id="7ecd167c-a96d-47bd-80ff-f1e54e18868e" name="GetHolidaysForMonth"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>HolidayServiceSoap</con:interface><con:operation>GetHolidaysForMonth</con:operation><con:request name="GetHolidaysForMonth" id="051817e0-0fd9-436d-996d-37d7e035ee37"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.holidaywebservice.com/Holidays/HolidayService.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:hol="http://www.27seconds.com/Holidays/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <hol:GetHolidaysForMonth>\r
+         <!--Optional:-->\r
+         <hol:countryCode>?</hol:countryCode>\r
+         <hol:year>?</hol:year>\r
+         <hol:month>?</hol:month>\r
+      </hol:GetHolidaysForMonth>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:wsaConfig action="http://www.27seconds.com/Holidays/GetHolidaysForMonth"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="e79e509e-f8b2-4004-9332-033d368537a3" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="GetHolidaysForYear TestCase" searchProperties="true"><con:settings/><con:testStep type="request" id="793598e2-9b93-4e06-8247-dea1931ad20f" name="GetHolidaysForYear"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>HolidayServiceSoap</con:interface><con:operation>GetHolidaysForYear</con:operation><con:request name="GetHolidaysForYear" id="90ecdc94-8177-411b-9ac0-728d0f9ffd13"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.holidaywebservice.com/Holidays/HolidayService.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:hol="http://www.27seconds.com/Holidays/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <hol:GetHolidaysForYear>\r
+         <!--Optional:-->\r
+         <hol:countryCode>GBEAW</hol:countryCode>\r
+         <hol:year>2020</hol:year>\r
+      </hol:GetHolidaysForYear>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig action="http://www.27seconds.com/Holidays/GetHolidaysForYear" mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="a4a15fe7-39d2-4cd5-8a19-f0fe59a0fa4d" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Assertions" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="GetCountryByName" id="4dcf1283-0910-4e5d-959c-1a4d87852de4"><con:settings/><con:config service="https://restcountries.eu" resourcePath="/rest/v2/name/{name}" methodName="Name 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="GetCountryByName" id="d9c144c3-a179-4f05-9951-70e59cd815f6" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://restcountries.eu</con:endpoint><con:request/><con:originalUri>https://restcountries.eu/rest/v2/name/name</con:originalUri><con:assertion type="JsonPath Count" id="b92c362b-825e-4706-8235-067fb52eaf25" name="JsonPath Count"><con:configuration><path>[0].currencies[0].name</path><content>1</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="JsonPath Match" id="5683445d-5770-40df-8869-d7106a0a0c2b" name="JsonPath Match"><con:configuration><path>[0].currencies[0].name</path><content>Canadian dollar</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="JsonPath Existence Match" id="20c708d2-8e79-45de-91a3-c95552c483ef" name="JsonPath Existence Match"><con:configuration><path>[0].region</path><content>true</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="JsonPath RegEx Match" id="59a25142-461c-4a2c-b6a5-34b918eab3ad" name="JsonPath RegEx Match"><con:configuration><path>[0].region</path><content>true</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments><regEx>Americas</regEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="name" value="canada" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>name</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep type="request" id="ce55daf3-2e96-4e04-8aa2-6d344a163c09" name="GetHolidaysForYear"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>HolidayServiceSoap</con:interface><con:operation>GetHolidaysForYear</con:operation><con:request name="GetHolidaysForYear" id="90ecdc94-8177-411b-9ac0-728d0f9ffd13"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.holidaywebservice.com/Holidays/HolidayService.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:hol="http://www.27seconds.com/Holidays/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <hol:GetHolidaysForYear>\r
+         <!--Optional:-->\r
+         <hol:countryCode>GBEAW</hol:countryCode>\r
+         <hol:year>2019</hol:year>\r
+      </hol:GetHolidaysForYear>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:assertion type="XPath Match" id="55e8c7db-caaf-4383-8ab9-43f281b8132e"><con:configuration/></con:assertion><con:assertion type="XPath Match" id="b725630e-fe5f-474e-8575-7a62b0bfa4ce" name="XPath Match"><con:configuration><path>declare namespace ns1='';
+declare namespace soap='http://schemas.xmlsoap.org/soap/envelope/';
+declare namespace xs='http://www.w3.org/2001/XMLSchema';
+declare namespace msdata='urn:schemas-microsoft-com:xml-msdata';
+declare namespace diffgr='urn:schemas-microsoft-com:xml-diffgram-v1';
+declare namespace ns2='http://www.27seconds.com/Holidays/';
+
+//xs:sequence</path><content><![CDATA[<xs:sequence xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns="http://www.27seconds.com/Holidays/" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Name" type="xs:string" minOccurs="0"/>
+  <xs:element name="Key" type="xs:string" minOccurs="0"/>
+  <xs:element name="Date" type="xs:dateTime" minOccurs="0"/>
+  <xs:element name="Type" type="xs:string" minOccurs="0"/>
+</xs:sequence>]]></content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="Invalid HTTP Status Codes" id="6a0aa2ed-b084-4094-9575-0e916efd5ac1" name="Invalid HTTP Status Codes"><con:configuration><codes>500,401</codes></con:configuration></con:assertion><con:assertion type="Simple Contains" id="e43adb96-a720-4ccc-88dd-39eb79172c76" name="Contains"><con:configuration><token>BURNS_NIGHT</token><ignoreCase>true</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" id="f69a86f9-1f84-49f5-9913-1e5ce6bae008" name="Response SLA"><con:configuration><SLA>1500</SLA></con:configuration></con:assertion><con:assertion type="GroovyScriptAssertion" id="ddb8f011-34b9-4067-b07c-316d0e75c5c6" name="Script Assertion"><con:configuration><scriptText>//check response time
+assert messageExchange.timeTaken&lt;4000
+
+//check for Endpoint
+//def endpoint="Tue Jun 04 00:19:51 IST 2019:INFO:http://www.holidaywebservice.com/Holidays/HolidayService.asmx"
+//assert.messageExchange.getEndpoint() == endpoint 
+//log.info messageExchange.getEndpoint() 
+
+//check for header
+assert messageExchange.responseHeaders["Content-Length"] != null
+
+//check attachments
+assert messageExchange.responseAttachments.length == 0
+</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig action="http://www.27seconds.com/Holidays/GetHolidaysForYear" mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:properties/><con:afterLoadScript>def su = new File("setup.txt").text
+def td  = new File("teardown.txt").text
+
+project.getTestSuiteList().each { testSuite -
+ testSuite.getTestCaseList().each { testCase -
+  testCase.setSetupScript(su)
+  testCase.setTearDownScript(td)
+ }
+}</con:afterLoadScript><con:beforeSaveScript/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:beforeRunScript>log.info("this runs before running the test suite")</con:beforeRunScript><con:afterRunScript>log.info("this runs after running the test suite")</con:afterRunScript><con:sensitiveInformation/></con:soapui-project>
