@@ -792,7 +792,7 @@ assert messageExchange.responseHeaders["Content-Length"] != null
 
 //check attachments
 assert messageExchange.responseAttachments.length == 0
-</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig action="http://www.27seconds.com/Holidays/GetHolidaysForYear" mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:properties/><con:afterLoadScript>def su = new File("setup.txt").text
+</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig action="http://www.27seconds.com/Holidays/GetHolidaysForYear" mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="groovy" name="Groovy Script" id="0e7f5d1b-fc9b-4318-83c4-fffeee15e3a6"><con:settings/><con:config><script>log.info </script></con:config></con:testStep><con:testStep type="properties" name="Properties" id="595b5eb0-38f0-491d-b371-939a2edf550a"><con:settings/><con:config xsi:type="con:PropertiesStep" saveFirst="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:properties/></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:properties/><con:afterLoadScript>def su = new File("setup.txt").text
 def td  = new File("teardown.txt").text
 
 project.getTestSuiteList().each { testSuite -
